@@ -1,0 +1,357 @@
+.users-container {
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.users-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.users-header h5 {
+    margin: 0;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: "Poppins", sans-serif;
+}
+
+.users-actions {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.users-actions button {
+    font-family: "Poppins", sans-serif;
+    margin-left: 10px;
+    padding: 10px 20px;
+    font-size: 14px;
+    cursor: pointer;
+    border: none;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.export-btn {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.add-btn {
+    background-color: #008CBA;
+    color: white;
+}
+
+.users-filter {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.search-input {
+    flex: 1;
+    padding: 10px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-family: "Poppins", sans-serif;
+}
+
+.role-select {
+    font-family: "Poppins", sans-serif;
+    padding: 10px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.search-btn {
+    padding: 10px 20px;
+    background-color: #555;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-family: "Poppins", sans-serif;
+}
+
+.search-btn:hover {
+    background-color: #333;
+}
+
+.users-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+.users-table th,
+.users-table td {
+    font-family: "Poppins", sans-serif;
+    font-size: 14px;
+    padding: 10px;
+    text-align: center;
+    border-bottom: 1px solid #ccc;
+}
+
+.edit-btn,
+.delete-btn {
+    font-family: "Poppins", sans-serif;
+    padding: 5px 10px;
+    margin-right: 5px;
+    font-size: 12px;
+    cursor: pointer;
+    border: none;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.edit-btn {
+    background-color: #f0ad4e;
+    color: white;
+}
+
+.delete-btn {
+    background-color: #d9534f;
+    color: white;
+}
+
+.pagination {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: "Poppins", sans-serif;
+}
+
+.rows-per-page {
+    display: flex;
+    align-items: center;
+}
+
+.rows-per-page select {
+    margin-left: 10px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.pagination-info {
+    font-size: 14px;
+}
+
+.pagination-controls button {
+    margin: 5px;
+    padding: 5px 10px;
+    width: 30px;
+    height: 30px;
+    font-size: 14px;
+    cursor: pointer;
+    border: none;
+    border-radius: 4px;
+    background-color: #ccc;
+    transition: background-color 0.3s;
+}
+
+.pagination-controls button:hover {
+    background-color: #aaa;
+}
+
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateX(25px);
+}
+
+.modal-content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+
+    h4 {
+        text-align: left;
+    }
+
+    p {
+        font-size: 12px;
+    }
+}
+
+.user-details {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+
+    label {
+        margin-top: 5px;
+        font-size: 8px;
+        text-align: left;
+    }
+
+    input,
+    select {
+        padding: 5px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        font-family: "Poppins", sans-serif;
+    }
+
+    .user-form {
+        display: flex;
+        flex-direction: column;
+        padding-right: 13px;
+        border-right: #333 solid 1px;
+    }
+}
+
+#img-view {
+    width: 70px;
+    height: 70px;
+}
+
+.drop-area p {
+    text-align: center;
+}
+
+.modal-actions {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.confirm-btn,
+.cancel-btn {
+    font-family: "Poppins", sans-serif;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.confirm-btn {
+    background-color: #d9534f;
+    color: white;
+}
+
+.cancel-btn {
+    background-color: #ccc;
+    color: black;
+}
+
+/* Mobile device */
+@media (max-width: 768px) {
+    .users-filter {
+        flex-direction: column;
+    }
+
+    .search-input {
+        margin-right: 0;
+        margin-bottom: 10px;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .role-select {
+        margin-right: 0;
+        margin-bottom: 10px;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .search-btn {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .users-actions {
+        flex-direction: column;
+    }
+
+    .users-actions button {
+        margin-left: 0;
+        margin-bottom: 10px;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .users-table {
+        display: block;
+        overflow-x: auto;
+    }
+
+    .users-table thead,
+    .users-table tbody,
+    .users-table th,
+    .users-table td,
+    .users-table tr {
+        display: block;
+    }
+
+    .users-table thead tr {
+        position: absolute;
+        top: -9999px;
+        left: -9999px;
+    }
+
+    .users-table tr {
+        border: 1px solid #ccc;
+        margin-bottom: 10px;
+    }
+
+    .users-table td {
+        border: none;
+        position: relative;
+        padding-left: 50%;
+    }
+
+    .users-table td:before {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        width: 45%;
+        white-space: nowrap;
+        font-weight: bold;
+    }
+
+    .users-table td:nth-of-type(1):before {
+        content: "#";
+    }
+
+    .users-table td:nth-of-type(2):before {
+        content: "Email";
+    }
+
+    .users-table td:nth-of-type(3):before {
+        content: "Phone Number";
+    }
+
+    .users-table td:nth-of-type(4):before {
+        content: "Firstname";
+    }
+
+    .users-table td:nth-of-type(5):before {
+        content: "Lastname";
+    }
+
+    .users-table td:nth-of-type(6):before {
+        content: "Role";
+    }
+
+    .users-table td:nth-of-type(7):before {
+        content: "Actions";
+    }
+}

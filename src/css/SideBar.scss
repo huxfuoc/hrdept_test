@@ -1,0 +1,130 @@
+.sidebar {
+    width: 50px;
+    height: 100vh;
+    background-color: #e1e1e1;
+    color: #ECF0F1;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    transition: width 0.3s;
+    overflow: hidden;
+    z-index: 999;
+}
+
+.sidebar:hover {
+    width: 200px;
+}
+
+.sidebar-header {
+    padding: 20px;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.sidebar-icon {
+    background-color: #262626;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    padding-left: 16px;
+    overflow: hidden;
+    transition: justify-content 0.3s, padding-left 0.3s;
+    cursor: pointer;
+}
+
+.sidebar-icon .sidebar-logo {
+    display: none;
+    height: 29px;
+    transition: display 0.3s;
+    margin-right: 70px;
+}
+
+.sidebar:hover .sidebar-icon .sidebar-logo {
+    display: block;
+}
+
+.sidebar-menu {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar-menu li {
+    display: flex;
+    align-items: center;
+    width: 90%;
+    height: 50px;
+    transition: background-color 0.3s, padding 0.3s;
+    cursor: pointer;
+    border-radius: 15px;
+    margin-left: 5px;
+}
+
+.sidebar-menu li:hover {
+    // background-color: #a2a2a26a;
+    border-radius: 12px;
+}
+
+.sidebar-menu li.no-hover:hover {
+    background-color: transparent;
+}
+
+.sidebar-menu li span {
+    margin-left: 20px;
+    display: none;
+    color: black;
+    font-family: "Poppins", sans-serif;
+    font-size: 13px;
+}
+
+.sidebar:hover .sidebar-menu li span {
+    display: inline;
+}
+
+.sidebar-menu li svg {
+    min-width: 25px;
+}
+
+.sidebar-input {
+    display: none;
+    margin-left: 10px;
+    margin-right: 20px;
+    padding: 5px;
+    width: 50%;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+    transition: display 0.3s;
+    font-family: "Poppins", sans-serif;
+}
+
+.sidebar:hover .sidebar-input {
+    display: inline;
+    flex: 1;
+}
+
+.sidebar-link {
+    text-decoration: none;
+    color: inherit;
+    display: flex;
+    align-items: center;
+    width: 88%;
+    height: 80%;
+    border-radius: 15px;
+}
+
+.sidebar-link:hover {
+    background-color: #a2a2a26a;
+}
+
+.sidebar-link.active {
+    background-color: #cccbcb;
+}
